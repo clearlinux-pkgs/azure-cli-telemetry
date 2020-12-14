@@ -4,7 +4,7 @@
 #
 Name     : azure-cli-telemetry
 Version  : 1.0.4
-Release  : 6
+Release  : 7
 URL      : https://files.pythonhosted.org/packages/70/1e/a6d38c76bfcdb82373c0ea22f74e018dc3a3124923a4d445e97c911e18a4/azure-cli-telemetry-1.0.4.tar.gz
 Source0  : https://files.pythonhosted.org/packages/70/1e/a6d38c76bfcdb82373c0ea22f74e018dc3a3124923a4d445e97c911e18a4/azure-cli-telemetry-1.0.4.tar.gz
 Summary  : Microsoft Azure CLI Telemetry Package
@@ -13,7 +13,6 @@ License  : MIT
 Requires: azure-cli-telemetry-python = %{version}-%{release}
 Requires: azure-cli-telemetry-python3 = %{version}-%{release}
 Requires: applicationinsights
-Requires: portalocker
 BuildRequires : applicationinsights
 BuildRequires : buildreq-distutils3
 BuildRequires : portalocker
@@ -38,7 +37,6 @@ Group: Default
 Requires: python3-core
 Provides: pypi(azure_cli_telemetry)
 Requires: pypi(applicationinsights)
-Requires: pypi(azure_cli_nspkg)
 Requires: pypi(portalocker)
 
 %description python3
@@ -54,7 +52,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1588883457
+export SOURCE_DATE_EPOCH=1607973010
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
