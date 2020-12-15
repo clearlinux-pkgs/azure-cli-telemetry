@@ -4,7 +4,7 @@
 #
 Name     : azure-cli-telemetry
 Version  : 1.0.4
-Release  : 11
+Release  : 12
 URL      : https://files.pythonhosted.org/packages/70/1e/a6d38c76bfcdb82373c0ea22f74e018dc3a3124923a4d445e97c911e18a4/azure-cli-telemetry-1.0.4.tar.gz
 Source0  : https://files.pythonhosted.org/packages/70/1e/a6d38c76bfcdb82373c0ea22f74e018dc3a3124923a4d445e97c911e18a4/azure-cli-telemetry-1.0.4.tar.gz
 Summary  : Microsoft Azure CLI Telemetry Package
@@ -72,10 +72,10 @@ echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
 echo ----[ mark ]----
 ## Remove excluded files
-rm -f %{buildroot}/usr/lib/python3.9/site-packages/azure/cli/__pycache__/__init__.cpython-38.pyc
-rm -f %{buildroot}/usr/lib/python3.9/site-packages/azure/cli/__init__.py
-rm -f %{buildroot}/usr/lib/python3.9/site-packages/azure/__init__.py
-rm -f %{buildroot}/usr/lib/python3.9/site-packages/azure/__pycache__/__init__.cpython-38.pyc
+rm -f %{buildroot}/usr/lib/python3*/site-packages/azure/cli/__pycache__/__init__.cpython-3*.pyc
+rm -f %{buildroot}/usr/lib/python3*/site-packages/azure/cli/__init__.py
+rm -f %{buildroot}/usr/lib/python3*/site-packages/azure/__init__.py
+rm -f %{buildroot}/usr/lib/python3*/site-packages/azure/__pycache__/__init__.cpython-3*.pyc
 
 %files
 %defattr(-,root,root,-)
