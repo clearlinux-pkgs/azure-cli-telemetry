@@ -72,10 +72,10 @@ echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
 echo ----[ mark ]----
 ## Remove excluded files
-rm -f %{buildroot}/usr/lib/python3.8/site-packages/azure/cli/__pycache__/__init__.cpython-38.pyc
-rm -f %{buildroot}/usr/lib/python3.8/site-packages/azure/cli/__init__.py
-rm -f %{buildroot}/usr/lib/python3.8/site-packages/azure/__init__.py
-rm -f %{buildroot}/usr/lib/python3.8/site-packages/azure/__pycache__/__init__.cpython-38.pyc
+rm -f %{buildroot}/usr/lib/python3.9/site-packages/azure/cli/__pycache__/__init__.cpython-38.pyc
+rm -f %{buildroot}/usr/lib/python3.9/site-packages/azure/cli/__init__.py
+rm -f %{buildroot}/usr/lib/python3.9/site-packages/azure/__init__.py
+rm -f %{buildroot}/usr/lib/python3.9/site-packages/azure/__pycache__/__init__.cpython-38.pyc
 
 %files
 %defattr(-,root,root,-)
